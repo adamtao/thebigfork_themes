@@ -20,6 +20,7 @@ TheBigFork provides defaults where needed. It is possible to create a new theme 
 more than a CSS file. 
 
 h3. Folders
+
 When creating a new theme, it is best to start with our minimal theme or sample theme—which 
 provide the following folder structure:
 
@@ -41,6 +42,7 @@ corresponding folders. Sample javascript and CSS files are provided. Keep the fi
 the same unless you plan heavy customization in the HTML layout files.
 
 h3. CSS
+
 The sample CSS file (website.css) contains inline comments describing each element in the pages. 
 Please refer to it for more information. Take special note of the path to image files. Your exact 
 path depends on the folder name for your theme:
@@ -51,6 +53,7 @@ _(where THEME_FOLDER_NAME is the name you gave the folder as described in the "F
 section of this document.)_
 
 h3. Layout Files
+
 The "layouts" folder contains two HTML files. These are actually ERB templates—which is a common 
 template language used in Ruby on Rails applications. TheBigFork fills in all the content where 
 <%=  %> tags appear. Keep these in your custom layout files, but you may move them around as needed 
@@ -60,9 +63,11 @@ There are two sample layout files. The file _website_home.html.erb_ corresponds 
 The other, _websites.html.erb_, corresponds to all sub-pages.
 
 h3. Other "Views"
+
 The remaining folders within the "views" folder control how the individual content pages appear.
 
 h3. Homepage Dissection
+
 It is strongly recommended to view the HTML sources provided to get a feel for the elements 
 that are expected on the homepage:
 
@@ -89,6 +94,7 @@ appear somewhere on the page along with its contents.
 facebook/twitter links, site navigation, theme credits, and links to TheBigFork (if the account is unpaid).
 
 h3. Content Page Dissection
+
 It is strongly recommended to view the HTML sources provided to get a feel for the elements that are 
 expected on the content pages:
 
@@ -99,6 +105,7 @@ individual page content.
 * Div (id="side_bar") is unused on content pages for now.
 
 h3. Other Details
+
 In addition to the files in your theme, you will need to provide the following values when uploading a theme:
 
 * Theme name (must be unique)
