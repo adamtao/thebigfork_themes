@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<title>Our Locations | Joe Jonas' Fine Eatery</title>
+	<script src="assets/websites.js" type="text/javascript"></script>
+	<link href="assets/websites.css" media="screen" rel="stylesheet" type="text/css" />
+	<meta content="authenticity_token" name="csrf-param" />
+	<meta content="10Z/wLpzrN/zQSrlqmltyig8J+xJpqQuO/igUHLfG08=" name="csrf-token" />
+	<link rel="image_src" href="system/website_images/81/small/joes.png"/>
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<script src="themes/default/javascripts/application.js" type="text/javascript"></script>
+	<link href="themes/default/stylesheets/website.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	markers_json = [{"address":"5107 Thomas Drive","address2":null,"admin_reviewer_id":null,"cached_slug":"joes-richton-park-il","city":"Richton Park","created_at":"2011-11-18T08:38:06-06:00","csz":null,"cuisine":null,"deleted":null,"distance":null,"edited_by_id":null,"fizook":null,"geocoded":null,"id":505000,"lat":"41.482033","lng":"-87.740197","name":"joes","open_table_id":null,"phone":"(312) 481-8041","reason_for_deletion":null,"source_id":null,"standardized_address":"5107 Thomas Dr, Richton Park, IL, 60471-1639, US","state":"IL","unique_id":"JOES-82033-40197","updated_at":"2011-11-18T08:38:06-06:00","url":"http://joes.lvh.me:3000/","zip":"60471"},{"address":"896 North 600 East","address2":null,"admin_reviewer_id":2,"cached_slug":"joes-eatery-bountiful-ut","city":"Bountiful","created_at":"2011-08-09T11:46:59-05:00","csz":null,"cuisine":null,"deleted":null,"distance":null,"edited_by_id":13,"fizook":null,"geocoded":null,"id":504999,"lat":"40.898493","lng":"-111.868322","name":"Joe's Fine Eatery","open_table_id":null,"phone":"","reason_for_deletion":null,"source_id":null,"standardized_address":"896 N 600 E, Bountiful, UT, 84010-3526, US","state":"UT","unique_id":"JOESF-98493-68322","updated_at":"2011-11-18T08:22:58-06:00","url":"http://joes.lvh.me:3000","zip":"84010"}]
+	//]]>
+	</script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			map_init('41.482033','-87.740197',14,false)
+		});
+	</script>
+
+</head>
+	<body>
+		<div id="page_container">
+			<header>
+				<div id="logo">
+					<a href="index.html"><img alt="Joes" src="system/website_images/81/small/joes.png" /></a>
+				</div>
+				<nav id="mainnav">
+					<ul class="clear">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="specials.html">Specials</a></li>
+						<li><a href="reviews.html">Reviews</a></li>
+						<li><a href="locations.html">Locations</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="page_content">				
+				
+				<div class="page_content"><p style="text-align: center;">
+			Click a location below to show it on the map...</p>
+		</div>
+		
+		<div id="locations_container">
+			<div id="map_container">
+				<div id="map"></div>
+			</div>
+			<div id="locations_list">
+				<div itemscope itemtype="http://data-vocabulary.org/Organization" class="restaurant_address" id="sidebar-item-1">
+					<span itemprop="name"><h3><a href="#" onclick="focusPoint(1); return false;">joes</a></h3></span>
+				    <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+				      <div itemprop="street-address">5107 Thomas Drive</div>
+				      <span itemprop="locality">Richton Park</span>,
+				      <span itemprop="region">IL</span>
+					  <span itemprop="postal-code">60471</span>
+				    </div>
+			        <p>Phone: <span itemprop="tel">(312) 481-8041</span></p>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="41.482033" />
+						<meta itemprop="longitude" content="-87.740197" />
+					</span>
+				</div>
+				<div itemscope itemtype="http://data-vocabulary.org/Organization" class="restaurant_address" id="sidebar-item-2">
+					<span itemprop="name"><h3><a href="#" onclick="focusPoint(2); return false;">Joe's Fine Eatery</a></h3></span>
+				    <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+				      <div itemprop="street-address">896 North 600 East</div>
+				      <span itemprop="locality">Bountiful</span>,
+				      <span itemprop="region">UT</span>
+					  <span itemprop="postal-code">84010</span>
+				    </div>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="40.898493" />
+						<meta itemprop="longitude" content="-111.868322" />
+					</span>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+
+				<div id="ad_support">
+					
+				</div>
+			</div>
+		</div>
+		<!-- theme_name/views/shared/_website_footer.html.erb -->
+		<footer>
+			<div id="social">
+					<a href="http://www.facebook.com/joejonas" target="_blank"><img alt="Facebook" height="20" src="http://cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png" width="20" /></a>
+					<a href="http://twitter.com/joejonas" target="_blank"><img alt="Twitter" height="20" src="http://cache.addthiscdn.com/icons/v1/thumbs/32x32/twitter.png" width="20" /></a>
+					<a href="http://twitter.com/joejonas" class="twitter-follow-button" data-button="grey" data-link-color="#281f17" data-show-count="true" data-text-color="#281f17">Follow @joejonas</a><br/>
+			</div>
+			<nav id="footernav">
+				<ul class="clear">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="specials.html">Specials</a></li>
+					<li><a href="reviews.html">Reviews</a></li>
+					<li><a href="locations.html">Locations</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="sitemap.xml">Sitemap</a></li>
+				</ul>
+			</nav>
+			<div id="copyright">				
+				&copy; 2011 joes. All rights reserved.
+			</div>
+
+			<div id="credits">Using the "Default" theme by admin.</div>
+		</footer>		
+	</body>
+</html>

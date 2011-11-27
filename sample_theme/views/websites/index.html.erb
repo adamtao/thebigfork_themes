@@ -1,0 +1,7 @@
+<% set_meta_tags :title => @website_page.title, :reverse => true %>
+
+<%= render_page_content(@website_page) %>
+
+<% if website.show_twitter_feed_on_homepage %>
+	<%= render :partial => "shared/website_twitter_feed" %>
+<% end %>

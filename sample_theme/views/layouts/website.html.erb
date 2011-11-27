@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<%= render 'shared/website_head' %>
+	<%= theme_javascript_include_tag 'application' %>
+	<%= theme_stylesheet_link_tag 'website' %>
+	<%= yield :extra_header_code %>
+</head>
+	<body>
+		<div id="page_container">
+			<header>
+				<div id="logo">
+					<%= logo %>
+				</div>
+				<%= main_navigation %>
+			</header>
+			<div id="page_content">
+				<% if notice %><p style="color: green;"><%= notice %></p><% end %>
+				<% if alert %><p style="color: red;"><%= alert %></p><% end %>
+				<%= yield %>
+				<% if content_for?(:side_bar) %>
+					<%= yield :side_bar %>
+				<% end %>
+				<div id="ad_support">
+					<%= render_ad_support %>
+				</div>
+			</div>
+		</div>
+		<%= render 'shared/website_footer' %>		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- theme_name/views/shared/_website_footer.html.erb -->
+<footer>
+	<div id="social">
+		<% unless website.facebook_link.blank? %>
+			<%= link_to(image_tag("http://cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png", :size=>"20x20"), 
+				  website.facebook_link, :target => "_blank") %>
+		<% end %>
+		<% unless website.twitter_name.blank? %>
+			<%= link_to(image_tag("http://cache.addthiscdn.com/icons/v1/thumbs/32x32/twitter.png", :size=>"20x20"), 
+			  		"http://twitter.com/#{ website.twitter_name }", :target => "_blank") %>
+			<%= link_to("Follow @#{ website.twitter_name }", 
+			  "http://twitter.com/#{ website.twitter_name }",
+			  :class => "twitter-follow-button",
+			  "data-show-count" => "true",
+			  "data-button" => "grey",
+			  "data-text-color" => "#281f17",
+			  "data-link-color" => "#281f17") %><br/>
+		<% end %>
+	</div>
+	<%= footer_navigation %>
+	<div id="copyright">				
+		&copy; <%= Date.today.year %> <%= website.name %>. All rights reserved.
+	</div>
+	<%= footer_ad_if_needed %>
+	<% begin %>
+	<div id="credits">Using the "<%= website.theme_name %>" theme by <%= website.theme.author.name %>.</div>
+	<% rescue %>
+	<!-- there was a problem loading the theme's credits -->
+	<% end %>
+</footer>

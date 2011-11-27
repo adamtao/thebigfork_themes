@@ -1,0 +1,17 @@
+#thebigfork_footer_container {
+	width: 100%;
+/*	text-align: center;*/
+}
+#thebigfork_footer {
+	font-size: 10px;
+	line-height: 14px;
+	min-height: 17px;
+	background: url(http://thebigfork.com/images/tiny_fork_bottom.png) no-repeat;
+	margin: 8px auto;
+	padding-left: 18px;
+	text-align: left;
+	width: 325px;
+}
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+html[xmlns] .clear { display: block;}
+* html .clear { height: 1%;}

@@ -1,0 +1,27 @@
+<!-- create your own theme_name/views/shared/_website_twitter_feed.html.erb to customize the look -->
+
+<%= content_for :extra_header_code do %>
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<% end %>
+<%= content_for :side_bar do %>
+<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 3,
+	  interval: 30000,
+	  width: 250,
+	  height: 250,
+	  theme: {
+	    shell: { background: '#222222', color: '#ffffff'},
+	    tweets: { background: '#000000', color: '#ffffff', links: '#f5f5ab'}
+	  },
+	  features: {
+	    scrollbar: false,
+	    loop: false,
+	    live: true,
+	    behavior: 'all'
+	  }
+	}).render().setUser('<%= website.twitter_name %>').start();
+</script>
+<% end %>

@@ -1,0 +1,236 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	background: #EBF0F5;
+	height: 100%;
+	color: #423B39;
+}
+
+/********** CSS Helpers **********/
+.clear:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+html[xmlns] .clear { display: block;}
+* html .clear { height: 1%;}
+
+/************ Common ***********/
+/* #logo h1 --> in case there's no image uploaded */
+#logo h1 {
+	font-size: 48px;
+	text-shadow: #FFF 0px 1px 0px;
+}
+a:link, a:visited {
+	color: blue;
+}
+a:hover {
+	color: #0080FF;
+}
+#ad_support {
+	text-align: center;
+}
+/*********** Home layout *************/
+#home_container {
+	width: 960px;
+	margin: 0px auto;
+	min-height: 600px;
+	margin-top: 35px;
+}
+#home_content_container { 
+	margin-bottom: 20px;
+	padding: 10px 0px;
+	border-bottom: 3px solid #333;
+	border-top: 2px solid #333;
+}
+#home_content_container #side_bar {
+	float: right;
+}
+#home_content_container #home_content {
+	background: white;
+	padding: 3px 8px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	height: 332px;
+	overflow: auto;
+	color: #222;
+	margin: 0px 260px 8px 0px;
+	box-shadow: #9EB7C4 1px 1px 8px;
+}
+
+/*********** Homepage Slideshow ************/
+#slideshow_container {
+	position: relative;
+	width: 960px; /* Use the size stored in your theme settings */
+	height: 300px;
+}
+#slideshow_container .slideshow_frame {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#slideshow_controls {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#slideshow_controls a:link,
+#slideshow_controls a:visited {
+	display: block;
+	margin: 8px;
+	padding: 2px 8px;
+	background-image: url(/themes/default/images/navigation-sprite.png); background-repeat: repeat-x; font-size: 12px; color: #fff; border-top: 1px solid #5a5d60; border-left: 1px solid #525659; text-shadow: 0px -1px 0px #000;
+	background-position: 0px 0px;
+	text-decoration: none;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+#slideshow_controls a:hover { background-position: 0px -36px; }
+#slideshow_controls a:active { background-position: 0px -72px; }
+
+/************* Standard Pages ***********/
+#page_container {
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+div#page_content {
+	padding: 15px 0px;
+	margin: 5px 4px;
+	border-bottom: 3px solid #333;
+}
+
+/********** Navigation *********/
+nav#mainnav {border-top: 1px solid #282c2f; border-bottom: 1px solid #121317; border-radius: 3px; display: block!important; background-image: url(/themes/default/images/navigation-sprite.png); background-repeat: repeat-x;}
+nav#mainnav ul {margin: 0px; padding: 0px; border-left: 1px solid #2e3235;}
+nav#mainnav li {list-style: none; float: left; border-right: 1px solid #2e3235; position: relative;}
+nav#mainnav li.first, nav#mainnav li.first a {border-top-left-radius: 2px; border-bottom-left-radius: 2px; -moz-border-top-left-radius: 2px; -moz-border-bottom-left-radius: 2px;}
+nav#mainnav li.last, nav#mainnav li.last a {border-top-right-radius: 2px; border-bottom-right-radius: 2px; -moz-border-top-right-radius: 2px; -moz-border-bottom-right-radius: 2px;}
+nav#mainnav li.drop a {padding-right: 30px;}
+nav#mainnav li a {display: block; padding: 9px 23px 10px; text-decoration: none; background-image: url(/themes/default/images/navigation-sprite.png); background-repeat: repeat-x; font-size: 12px; color: #fff; border-top: 1px solid #5a5d60; border-left: 1px solid #525659; text-shadow: 0px -1px 0px #000;}
+nav#mainnav li a {background-position: 0px 0px;}
+nav#mainnav li a:hover, nav#mainnav li.active a {background-position: 0px -36px;}
+nav#mainnav li a:active {background-position: 0px -72px;}
+
+/************** Footer *************/
+footer {
+	width: 960px;
+	margin: 20px auto 20px auto;
+	font-size: 85%;
+	text-align: center;
+}
+nav#footernav { float: right; text-align: right;}
+nav#footernav ul {margin: 0px; padding: 0px;}
+nav#footernav li {list-style: none; float: left; position: relative; text-transform: lowercase;}
+nav#footernav li a {display: block; padding: 0px 6px; text-decoration: none; color: #0F1012;}
+nav#footernav li a:hover {text-decoration: underline;}
+#copyright { clear: both; padding-top: 14px;}
+footer #social { float: left; margin-top: -5px;}
+
+/************ Locations *********/
+div#locations_container {
+	width: 850px;
+	margin: 20px auto;
+	background: #FFF;
+	color: #000;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	box-shadow: #9EB7C4 1px 1px 8px;
+	padding: 10px;
+}
+div#locations_container div#map_container {
+	float: left;
+}
+div#locations_container div#map_container div#map {
+	width: 400px;
+	height: 400px;
+}
+div#locations_container div#locations_list {
+	margin-left: 425px;
+	height: 380px;
+	overflow: auto;
+}
+.restaurant_address {
+	padding: 6px 12px;
+	margin-bottom: 10px;
+	border-bottom: 2px dotted #C2C2C2;
+}
+.current {
+	background: #C4D4EE;
+}
+
+/************ Contact Page ***********/
+div#contact_form {
+	width: 600px;
+	margin: 0px auto;
+	background: #FFF;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	box-shadow: #9EB7C4 1px 1px 8px;
+}
+
+/*********** Form fields ************/
+input, select, textarea {
+	font-family: Helvetica, Arial, Verdana, Sans-serif;
+}
+textarea {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 5px 0px 2px;
+}
+div.form_buttons {
+	margin-top: 20px;
+}
+div.form_field {
+	margin: 25px 0px;
+	position: relative;
+}
+div.form_field input {
+	font-size: 120%;
+	margin: 2px 0px;
+	font-size: 21px;
+	padding: 7px 6px 3px 6px;
+}
+div.form_field select {
+	font-size: 120%;
+	margin: 2px 0px;
+	font-size: 20px;	
+	padding: 6px 15px 4px 6px;
+}
+
+/******* Errors *******/
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+.field_with_errors label {
+	color: white;
+}
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+  line-height: 17px;
+}
